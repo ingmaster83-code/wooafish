@@ -1,0 +1,136 @@
+---
+layout: default
+title: 전국 낚시터 정보 총정리 (2026년)
+description: 전국 1,150여개 낚시터 정보 총정리! 저수지·바다·하천 낚시터를 지역별로 한눈에 확인하고, 주요 어종·이용요금·편의시설까지 무료로 확인하세요.
+---
+
+<div class="home-layout">
+<div class="home-page">
+
+  <div class="home-hero">
+    <h1>🎣 전국 낚시터 한눈에</h1>
+    <p>전국 {{ site.data.fishing_spots | size }}개 낚시터 위치·어종·요금 정보</p>
+  </div>
+
+  <!-- 검색 -->
+  <div class="search-wrap">
+    <div class="search-box-wrap">
+      <input type="text" id="searchBox" class="search-box" placeholder="낚시터명, 지역, 어종 검색...">
+    </div>
+    <div class="search-results" id="searchResults"></div>
+  </div>
+
+  <!-- 광고 1 -->
+  <div class="ad-slot" style="padding:0;margin-bottom:32px;">{% include ad.html %}</div>
+
+  <!-- 지역별 찾기 -->
+  <div class="home-section">
+    <h2>🗺️ 지역별로 찾기</h2>
+    <div class="region-btn-grid">
+      {% assign regions_data = site.data.fishing_spots | group_by: 'region' | sort: 'name' %}
+      {% for rg in regions_data %}
+      {% assign slug = rg.items.first.regionSlug %}
+      <a href="/region/{{ slug }}/" class="region-btn">
+        {{ rg.name }}
+        <span class="count">{{ rg.items | size }}곳</span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+
+  <!-- 유형별 찾기 -->
+  <div class="home-section">
+    <h2>🎣 유형별로 찾기</h2>
+    <div class="days-btn-grid">
+      <a href="/type/reservoir/" class="days-btn">🏞️ 저수지</a>
+      <a href="/type/sea/" class="days-btn">🌊 바다</a>
+      <a href="/type/flatland/" class="days-btn">🌾 하천/평지</a>
+      <a href="/type/etc/" class="days-btn">🎣 기타(실내 등)</a>
+      <a href="/type/valley/" class="days-btn">⛰️ 계곡</a>
+    </div>
+  </div>
+
+  <!-- 광고 2 -->
+  <div class="ad-slot" style="padding:0;margin-bottom:32px;">{% include ad.html %}</div>
+
+  <!-- 정보가 풍부한 낚시터 -->
+  <div class="home-section">
+    <h2>⭐ 정보가 풍부한 낚시터</h2>
+    <div class="top-market-grid">
+      {% assign featured = "busan-0001,gyeonggi-0170,gyeonggi-0178,gangwon-0043,chungbuk-0010,chungbuk-0013,chungnam-0093,chungnam-0099,jeonnam-0029,jeonnam-0030,busan-0003,ulsan-0003,gangwon-0007,jeonbuk-0001,gyeongbuk-0001,gyeongnam-0034" | split: ',' %}
+      {% for fid in featured %}
+      {% assign s = site.data.fishing_spots | where: 'slug', fid | first %}
+      {% if s %}
+      <a href="/spot/{{ s.slug }}/" class="top-market-card">
+        <div class="top-card-name">{{ s.spotName }}</div>
+        <div class="top-card-region">{{ s.region }} · {{ s.city }}</div>
+        <div class="top-card-specialties">🐟 {{ s.species | join: ' · ' }}</div>
+      </a>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+  <!-- 이용 안내 -->
+  <div class="guide-section">
+    <h2>ℹ️ 이용 안내</h2>
+    <ul class="guide-list">
+      <li>🎣 본 정보는 낚시 관리 및 육성법에 따라 지자체장이 허가한 낚시터를 기준으로 합니다</li>
+      <li>💰 이용요금·운영시간은 계절과 조황에 따라 변동될 수 있으니 방문 전 확인하세요</li>
+      <li>🛟 물놀이/낚시 시에는 반드시 구명조끼 등 안전장비를 착용하세요</li>
+      <li>⚠️ 본 정보는 변경될 수 있습니다. 방문 전 해당 낚시터에 직접 문의하세요.</li>
+    </ul>
+  </div>
+
+</div>
+
+<aside class="home-sidebar">
+  {% include ad.html slot="6255378195" label="사이드바" %}
+</aside>
+
+</div>
+
+<!-- Fuse.js 검색 -->
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@7/dist/fuse.min.js"></script>
+<script>
+(async function() {
+  let spots = [];
+  try {
+    const res = await fetch('/search_index.json');
+    spots = await res.json();
+  } catch(e) { return; }
+
+  const fuse = new Fuse(spots, {
+    keys: ['name', 'region', 'city', 'species'],
+    threshold: 0.35,
+    minMatchCharLength: 1,
+  });
+
+  const searchBox = document.getElementById('searchBox');
+  const searchResults = document.getElementById('searchResults');
+
+  searchBox.addEventListener('input', function() {
+    const q = this.value.trim();
+    if (!q) { searchResults.classList.remove('active'); return; }
+    const results = fuse.search(q).slice(0, 12);
+    if (results.length === 0) {
+      searchResults.innerHTML = '<div style="padding:12px 16px;color:#6B7280;">검색 결과가 없습니다.</div>';
+    } else {
+      searchResults.innerHTML = results.map(r => {
+        const s = r.item;
+        return `<a href="/spot/${s.slug}/" class="search-result-item">
+          <span class="search-result-name">${s.name}</span>
+          <span class="search-result-meta">${s.region} · ${(s.species||[]).slice(0,2).join('·')}</span>
+        </a>`;
+      }).join('');
+    }
+    searchResults.classList.add('active');
+  });
+
+  document.addEventListener('click', e => {
+    if (!searchBox.contains(e.target) && !searchResults.contains(e.target)) {
+      searchResults.classList.remove('active');
+    }
+  });
+})();
+</script>

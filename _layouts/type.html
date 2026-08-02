@@ -1,0 +1,66 @@
+---
+layout: default
+---
+
+<div class="market-layout">
+<div class="list-page">
+
+  <nav class="breadcrumb">
+    <a href="/">홈</a>
+    <span>›</span>
+    <span>{{ page.type_label }} 낚시터</span>
+  </nav>
+
+  <div class="list-header">
+    <h1>{{ page.type_icon }} 전국 {{ page.type_label }} 낚시터</h1>
+    <p class="list-count">전국 {{ page.spots | size }}곳</p>
+  </div>
+
+  <!-- 광고 -->
+  <div class="ad-slot">{% include ad.html %}</div>
+
+  {% assign by_region = page.spots | group_by: 'region' | sort: 'name' %}
+  {% for group in by_region %}
+  {% assign r_slug = group.items.first.regionSlug %}
+  <div class="region-section">
+    <h2 class="region-section-title">
+      <a href="/region/{{ r_slug }}/">{{ group.name }}</a>
+      <span class="group-count">{{ group.items | size }}곳</span>
+    </h2>
+    <div class="market-cards">
+      {% for spot in group.items %}
+      <a href="/spot/{{ spot.slug }}/" class="market-card">
+        <div class="card-name">{{ spot.spotName }}</div>
+        <div class="card-city">{{ spot.city }}</div>
+        <div class="card-specialties">
+          {% for sp in spot.species limit:3 %}
+          <span class="sp-tag">🐟 {{ sp }}</span>
+          {% endfor %}
+        </div>
+        {% if spot.address and spot.address != "" %}
+        <div class="card-address">📍 {{ spot.address }}</div>
+        {% endif %}
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+
+  <div class="days-nav">
+    <h3>다른 유형 낚시터</h3>
+    <div class="days-btn-grid">
+      {% assign all_types = "reservoir:🏞️ 저수지,sea:🌊 바다,flatland:🌾 하천/평지,valley:⛰️ 계곡,etc:🎣 기타(실내 등)" | split: ',' %}
+      {% for t in all_types %}
+      {% assign parts = t | split: ':' %}
+      {% if parts[0] != page.type_slug %}
+      <a href="/type/{{ parts[0] }}/" class="days-btn-sm">{{ parts[1] }}</a>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+</div>
+<aside class="market-sidebar">
+  {% include ad.html slot="6255378195" label="사이드바" %}
+</aside>
+</div>

@@ -1,0 +1,79 @@
+---
+layout: default
+---
+
+<div class="market-layout">
+<div class="list-page">
+
+  <nav class="breadcrumb">
+    <a href="/">홈</a>
+    <span>›</span>
+    <span>{{ page.region }} 낚시터</span>
+  </nav>
+
+  <div class="list-header">
+    <h1>🗺️ {{ page.region }} 낚시터</h1>
+    <p class="list-count">총 {{ page.spots | size }}곳</p>
+  </div>
+
+  <!-- 광고 -->
+  <div class="ad-slot">{% include ad.html %}</div>
+
+  <div class="city-subnav">
+    <h3>🏘️ 시/군/구별로 찾기</h3>
+    <div class="region-btn-grid">
+      {% assign city_names = page.spots | map: 'city' | uniq | sort %}
+      {% for c in city_names %}
+      {% assign c_count = page.spots | where: 'city', c | size %}
+      <span class="region-btn-sm">{{ c }} <span class="count">{{ c_count }}</span></span>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="market-list">
+    {% assign type_groups = page.spots | group_by: 'typeLabel' %}
+    {% assign sorted_groups = type_groups | sort: "size" | reverse %}
+    {% for group in sorted_groups %}
+    <div class="days-group">
+      <h2 class="days-group-title">
+        <span>{{ group.items.first.typeIcon }} {{ group.name }}</span>
+        <span class="group-count">{{ group.items | size }}곳</span>
+      </h2>
+      <div class="market-cards">
+        {% for spot in group.items %}
+        <a href="/spot/{{ spot.slug }}/" class="market-card">
+          <div class="card-name">{{ spot.spotName }}</div>
+          <div class="card-city">{{ spot.city }}</div>
+          <div class="card-specialties">
+            {% for sp in spot.species limit:3 %}
+            <span class="sp-tag">🐟 {{ sp }}</span>
+            {% endfor %}
+          </div>
+          {% if spot.address and spot.address != "" %}
+          <div class="card-address">📍 {{ spot.address }}</div>
+          {% endif %}
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="region-nav">
+    <h3>다른 지역 낚시터</h3>
+    <div class="region-btn-grid">
+      {% assign all_regions = site.data.fishing_spots | map: 'region' | uniq | sort %}
+      {% for r in all_regions %}
+      {% assign r_slug = site.data.fishing_spots | where: 'region', r | first %}
+      {% if r != page.region %}
+      <a href="/region/{{ r_slug.regionSlug }}/" class="region-btn-sm">{{ r }}</a>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+</div>
+<aside class="market-sidebar">
+  {% include ad.html slot="6255378195" label="사이드바" %}
+</aside>
+</div>

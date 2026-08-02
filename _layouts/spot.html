@@ -1,0 +1,232 @@
+---
+layout: default
+---
+
+<!-- 브레드크럼 -->
+<nav class="breadcrumb">
+  <a href="/">홈</a>
+  <span>›</span>
+  <a href="/region/{{ page.regionSlug }}/">{{ page.region }}</a>
+  <span>›</span>
+  <a href="/type/{{ page.typeSlug }}/">{{ page.typeLabel }}</a>
+  <span>›</span>
+  <span>{{ page.spotName }}</span>
+</nav>
+
+<div class="market-layout">
+<div class="market-page">
+
+  <!-- 낚시터 헤더 -->
+  <div class="market-header">
+    <div class="market-header-top">
+      <div class="market-badges">
+        <span class="badge badge-region">{{ page.region }} {{ page.city }}</span>
+        <span class="badge badge-city">{{ page.typeIcon }} {{ page.typeLabel }}</span>
+      </div>
+      <h1 class="market-name">{{ page.spotName }}</h1>
+    </div>
+
+    <div class="market-info-grid">
+      <div class="info-item">
+        <span class="info-icon">📍</span>
+        <span>{{ page.address }}</span>
+      </div>
+      {% if page.lat and page.lat != "" %}
+      <div class="info-item">
+        <a href="https://map.kakao.com/link/map/{{ page.spotName | url_encode }},{{ page.lat }},{{ page.lng }}" target="_blank" rel="noopener" class="parking-btn">🗺️ 카카오맵으로 위치 보기</a>
+      </div>
+      {% endif %}
+      {% if page.phone and page.phone != "" %}
+      <div class="info-item">
+        <span class="info-icon">📞</span>
+        <a href="tel:{{ page.phone }}">{{ page.phone }}</a>
+      </div>
+      {% endif %}
+    </div>
+
+    {% if page.species and page.species.size > 0 %}
+    <div class="market-specialties">
+      <span class="specialties-label">주요 어종</span>
+      {% for sp in page.species %}
+      <span class="specialty-tag">🐟 {{ sp }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    {% assign has_facility_info = false %}
+    {% if page.waterArea != "" or page.capacity != "" or page.facilityWater != "" %}
+      {% assign has_facility_info = true %}
+    {% endif %}
+    {% if has_facility_info %}
+    <div class="market-facilities">
+      {% if page.waterArea and page.waterArea != "" %}<span class="facility-badge">💧 수면적 {{ page.waterArea }}㎡</span>{% endif %}
+      {% if page.capacity and page.capacity != "" %}<span class="facility-badge">👥 최대 {{ page.capacity }}명</span>{% endif %}
+      {% if page.facilityWater and page.facilityWater != "" %}<span class="facility-badge">🚤 {{ page.facilityWater }}</span>{% endif %}
+    </div>
+    {% endif %}
+
+    {% if page.safety.size > 0 or page.convenience.size > 0 %}
+    <div class="market-facilities" style="margin-top:6px;">
+      {% for s in page.safety %}<span class="facility-badge yes">🛟 {{ s }}</span>{% endfor %}
+      {% for c in page.convenience %}<span class="facility-badge">🚻 {{ c }}</span>{% endfor %}
+    </div>
+    {% endif %}
+  </div>
+
+  <!-- 광고 -->
+  <div class="ad-slot">{% include ad.html %}</div>
+
+  <!-- 낚시터 소개 -->
+  {% if page.point and page.point != "" %}
+  <div class="market-section">
+    <h2>🎣 낚시터 소개</h2>
+    <p class="market-description">{{ page.point }}</p>
+  </div>
+  {% endif %}
+
+  <!-- 이용요금 -->
+  {% if page.fee and page.fee != "" %}
+  <div class="market-tip">
+    <span class="tip-icon">💰</span>
+    <div>
+      <strong>이용요금</strong>
+      <p>{{ page.fee }}</p>
+    </div>
+  </div>
+  {% endif %}
+
+  {% if page.nearby and page.nearby != "" %}
+  <div class="market-section">
+    <h2>🗺️ 주변 관광지</h2>
+    <p class="market-description">{{ page.nearby }}</p>
+  </div>
+  {% endif %}
+
+  {% if page.manageOrg and page.manageOrg != "" %}
+  <div class="market-section">
+    <h2>🏛️ 관리 기관</h2>
+    <p class="market-description">{{ page.manageOrg }}{% if page.manageTel and page.manageTel != "" %} · <a href="tel:{{ page.manageTel }}">{{ page.manageTel }}</a>{% endif %}</p>
+  </div>
+  {% endif %}
+
+  <!-- 같은 지역 다른 낚시터 -->
+  {% if page.same_region and page.same_region.size > 0 %}
+  <div class="market-section">
+    <h2>🗺️ {{ page.region }} 다른 낚시터</h2>
+    <div class="related-grid">
+      {% for s in page.same_region %}
+      <a href="/spot/{{ s.slug }}/" class="related-card">
+        <span class="related-icon">{{ s.typeIcon }}</span>
+        <span class="related-name">{{ s.name }}</span>
+        <span class="related-days">{{ s.city }} · {{ s.typeLabel }}</span>
+      </a>
+      {% endfor %}
+    </div>
+    <a href="/region/{{ page.regionSlug }}/" class="view-all-link">{{ page.region }} 전체 낚시터 보기 →</a>
+  </div>
+  {% endif %}
+
+  <!-- 같은 유형 다른 낚시터 -->
+  {% if page.same_type and page.same_type.size > 0 %}
+  <div class="market-section">
+    <h2>{{ page.typeIcon }} 전국 {{ page.typeLabel }} 낚시터</h2>
+    <div class="related-grid">
+      {% for s in page.same_type %}
+      <a href="/spot/{{ s.slug }}/" class="related-card">
+        <span class="related-icon">{{ page.typeIcon }}</span>
+        <span class="related-name">{{ s.name }}</span>
+        <span class="related-days">{{ s.region }} {{ s.city }}</span>
+      </a>
+      {% endfor %}
+    </div>
+    <a href="/type/{{ page.typeSlug }}/" class="view-all-link">전국 {{ page.typeLabel }} 낚시터 전체 보기 →</a>
+  </div>
+  {% endif %}
+
+  <!-- 같은 어종 낚는 다른 낚시터 -->
+  {% if page.same_species and page.same_species.size > 0 %}
+  <div class="market-section">
+    <h2>🐟 같은 어종 낚는 다른 낚시터</h2>
+    <div class="related-grid">
+      {% for s in page.same_species %}
+      <a href="/spot/{{ s.slug }}/" class="related-card">
+        <span class="related-icon">🐟</span>
+        <span class="related-name">{{ s.name }}</span>
+        <span class="related-days">{{ s.sharedSpecies }} · {{ s.region }} {{ s.city }}</span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+
+  <!-- 최근 본 낚시터 -->
+  <div class="market-section" id="recentSection" style="display:none">
+    <h2>🕑 최근 본 낚시터</h2>
+    <div class="related-grid" id="recentGrid"></div>
+  </div>
+
+  <!-- 이전/다음 낚시터 -->
+  {% if page.prev_spot and page.next_spot %}
+  <div class="market-prevnext">
+    <a href="/spot/{{ page.prev_spot.slug }}/" class="prevnext-btn prevnext-prev">
+      <span class="prevnext-label">◀ 이전 낚시터</span>
+      <span class="prevnext-name">{{ page.prev_spot.name }}</span>
+    </a>
+    <a href="/spot/{{ page.next_spot.slug }}/" class="prevnext-btn prevnext-next">
+      <span class="prevnext-label">다음 낚시터 ▶</span>
+      <span class="prevnext-name">{{ page.next_spot.name }}</span>
+    </a>
+  </div>
+  {% endif %}
+
+  <!-- Schema.org LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TouristAttraction",
+    "name": "{{ page.spotName | escape }}",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "{{ page.region | escape }}",
+      "addressLocality": "{{ page.city | escape }}",
+      "streetAddress": "{{ page.address | escape }}"
+    }{% if page.phone and page.phone != "" %},
+    "telephone": "{{ page.phone }}"{% endif %}{% if page.lat and page.lat != "" %},
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": {{ page.lat }},
+      "longitude": {{ page.lng }}
+    }{% endif %},
+    "description": "{{ page.description | escape }}"
+  }
+  </script>
+
+</div>
+<aside class="market-sidebar">
+  {% include ad.html slot="6255378195" label="사이드바" %}
+</aside>
+</div>
+
+<script>
+// 최근 본 낚시터 (localStorage)
+(() => {
+  const KEY = 'wooafish_recent';
+  const currentSlug = {{ page.slug | jsonify }};
+  const currentName = {{ page.spotName | jsonify }};
+  let list = [];
+  try { list = JSON.parse(localStorage.getItem(KEY) || '[]'); } catch (e) {}
+
+  const others = list.filter(i => i.slug !== currentSlug);
+  if (others.length > 0) {
+    document.getElementById('recentGrid').innerHTML = others.slice(0, 8).map(i => `
+      <a href="/spot/${i.slug}/" class="related-card">
+        <span class="related-icon">🕑</span>
+        <span class="related-name">${i.name}</span>
+      </a>`).join('');
+    document.getElementById('recentSection').style.display = 'block';
+  }
+
+  const updated = [{ slug: currentSlug, name: currentName }, ...others].slice(0, 10);
+  try { localStorage.setItem(KEY, JSON.stringify(updated)); } catch (e) {}
+})();
+</script>

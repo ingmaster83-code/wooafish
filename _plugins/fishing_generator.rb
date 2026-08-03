@@ -5,13 +5,13 @@ module Jekyll
     safe true
     priority :normal
 
-    TYPE_ORDER = %w[reservoir sea flatland valley etc].freeze
+    TYPE_ORDER = %w[reservoir sea port flatland valley etc].freeze
     TYPE_LABELS = {
-      "reservoir" => "저수지", "sea" => "바다", "flatland" => "하천/평지",
+      "reservoir" => "저수지", "sea" => "바다", "port" => "항구/포구", "flatland" => "하천/평지",
       "valley" => "계곡", "etc" => "기타(실내 등)"
     }.freeze
     TYPE_ICONS = {
-      "reservoir" => "🏞️", "sea" => "🌊", "flatland" => "🌾",
+      "reservoir" => "🏞️", "sea" => "🌊", "port" => "⚓", "flatland" => "🌾",
       "valley" => "⛰️", "etc" => "🎣"
     }.freeze
 

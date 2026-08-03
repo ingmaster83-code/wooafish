@@ -43,7 +43,7 @@ layout: default
         {% endif %}
       </a>
       {% assign item_counter = item_counter | plus: 1 %}
-      {% assign item_rem = item_counter | modulo: 12 %}
+      {% assign item_rem = item_counter | modulo: 24 %}
       {% if item_rem == 0 %}
     </div>
     <div class="ad-slot">{% include ad.html %}</div>

@@ -33,6 +33,7 @@ layout: default
   <div class="market-list">
     {% assign type_groups = page.spots | group_by: 'typeLabel' %}
     {% assign sorted_groups = type_groups | sort: "size" | reverse %}
+    {% assign item_counter = 0 %}
     {% for group in sorted_groups %}
     <div class="days-group">
       <h2 class="days-group-title">
@@ -53,6 +54,13 @@ layout: default
           <div class="card-address">📍 {{ spot.address }}</div>
           {% endif %}
         </a>
+        {% assign item_counter = item_counter | plus: 1 %}
+        {% assign item_rem = item_counter | modulo: 12 %}
+        {% if item_rem == 0 %}
+      </div>
+      <div class="ad-slot">{% include ad.html %}</div>
+      <div class="market-cards">
+        {% endif %}
         {% endfor %}
       </div>
     </div>

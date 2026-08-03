@@ -20,6 +20,7 @@ layout: default
   <div class="ad-slot">{% include ad.html %}</div>
 
   {% assign by_region = page.spots | group_by: 'region' | sort: 'name' %}
+  {% assign item_counter = 0 %}
   {% for group in by_region %}
   {% assign r_slug = group.items.first.regionSlug %}
   <div class="region-section">
@@ -41,6 +42,13 @@ layout: default
         <div class="card-address">📍 {{ spot.address }}</div>
         {% endif %}
       </a>
+      {% assign item_counter = item_counter | plus: 1 %}
+      {% assign item_rem = item_counter | modulo: 12 %}
+      {% if item_rem == 0 %}
+    </div>
+    <div class="ad-slot">{% include ad.html %}</div>
+    <div class="market-cards">
+      {% endif %}
       {% endfor %}
     </div>
   </div>

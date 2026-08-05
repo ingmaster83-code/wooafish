@@ -57,7 +57,7 @@ layout: default
   <div class="days-nav">
     <h3>다른 유형 낚시터</h3>
     <div class="days-btn-grid">
-      {% assign all_types = "reservoir:🏞️ 저수지,sea:🌊 바다,port:⚓ 항구/포구,flatland:🌾 하천/평지,valley:⛰️ 계곡,etc:🎣 기타(실내 등)" | split: ',' %}
+      {% assign all_types = "reservoir:🏞️ 저수지,sea:🌊 바다,port:⚓ 항구/포구,island:🏝️ 섬,lighthouse:🚨 등대,coast:🌊 해안절경,flatland:🌾 하천/평지,valley:⛰️ 계곡,etc:🎣 기타(실내 등)" | split: ',' %}
       {% for t in all_types %}
       {% assign parts = t | split: ':' %}
       {% if parts[0] != page.type_slug %}

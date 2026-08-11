@@ -33,7 +33,7 @@ layout: default
       </div>
       {% if page.lat and page.lat != "" %}
       <div class="info-item">
-        <a href="https://map.kakao.com/link/map/{{ page.spotName | url_encode }},{{ page.lat }},{{ page.lng }}" target="_blank" rel="noopener" class="parking-btn">🗺️ 카카오맵으로 위치 보기</a>
+        <a href="https://map.kakao.com/link/map/{{ page.spotName | url_encode }},{{ page.lat }},{{ page.lng }}" class="parking-btn">🗺️ 카카오맵으로 위치 보기</a>
       </div>
       {% endif %}
       {% if page.phone and page.phone != "" %}

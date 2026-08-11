@@ -17,13 +17,19 @@ module Jekyll
       "valley" => "⛰️", "etc" => "🎣"
     }.freeze
 
+    TIDE_RELEVANT_TYPES = %w[sea port island lighthouse coast].freeze
+    TIDE_MAX_DIST_DEG = 0.5 # 대략 50km 이내일 때만 연결
+
     def generate(site)
       spots = site.data['fishing_spots']
       return unless spots&.any?
 
+      tide_spots = site.data['tide_lookup'] || []
+
       Jekyll.logger.info "FishingGenerator:", "#{spots.size}개 낚시터 페이지 생성 중..."
 
       spots.each do |spot|
+        nearest_tide = nearest_tide_spot(spot, tide_spots)
         same_region = spots
           .select { |s| s['region'] == spot['region'] && s['slug'] != spot['slug'] }
           .first(8)
@@ -54,7 +60,7 @@ module Jekyll
           next_spot = { 'slug' => n['slug'], 'name' => n['spotName'] }
         end
 
-        site.pages << SpotPage.new(site, spot, same_region, same_type, same_species, prev_spot, next_spot)
+        site.pages << SpotPage.new(site, spot, same_region, same_type, same_species, prev_spot, next_spot, nearest_tide)
       end
 
       by_region = spots.group_by { |s| s['region'] }
@@ -72,10 +78,28 @@ module Jekyll
 
       Jekyll.logger.info "FishingGenerator:", "완료 (#{spots.size}개 낚시터)"
     end
+
+    def nearest_tide_spot(spot, tide_spots)
+      return nil unless TIDE_RELEVANT_TYPES.include?(spot['typeSlug'])
+      return nil if spot['lat'].to_s.empty? || spot['lng'].to_s.empty?
+      return nil if tide_spots.empty?
+
+      s_lat = spot['lat'].to_f
+      s_lng = spot['lng'].to_f
+      best, best_d = nil, nil
+      tide_spots.each do |t|
+        d = (t['lat'].to_f - s_lat)**2 + (t['lot'].to_f - s_lng)**2
+        if best_d.nil? || d < best_d
+          best, best_d = t, d
+        end
+      end
+      return nil if best.nil? || Math.sqrt(best_d) > TIDE_MAX_DIST_DEG
+      best
+    end
   end
 
   class SpotPage < Page
-    def initialize(site, spot, same_region, same_type, same_species, prev_spot, next_spot)
+    def initialize(site, spot, same_region, same_type, same_species, prev_spot, next_spot, nearest_tide = nil)
       @site = site
       @base = site.source
       @dir  = "spot/#{spot['slug']}"
@@ -90,6 +114,7 @@ module Jekyll
       self.data['same_species'] = same_species
       self.data['prev_spot']    = prev_spot
       self.data['next_spot']    = next_spot
+      self.data['nearestTide']  = nearest_tide
 
       species_str = (spot['species'] || []).join(', ')
       fee_str = spot['fee'].to_s.empty? ? '요금 정보 없음' : spot['fee']

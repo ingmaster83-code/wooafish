@@ -252,6 +252,18 @@ img { max-width: 100%; }
 .market-section h2 { font-size: 1.05rem; font-weight: 700; margin-bottom: 14px; color: var(--text); border-bottom: 2px solid var(--primary-light); padding-bottom: 8px; }
 .market-description { line-height: 1.8; color: var(--text); }
 
+.tide-crosslink-banner {
+  margin: 16px 0; padding: 14px 18px; background: linear-gradient(135deg, var(--primary-light), #ECFEFF);
+  border: 1px solid #BAE6FD; border-radius: var(--radius);
+  display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+}
+.tide-crosslink-banner span { font-size: .9rem; color: var(--text); }
+.tide-crosslink-banner a {
+  background: var(--primary); color: #fff; padding: 8px 16px; border-radius: 8px;
+  font-weight: 700; font-size: .86rem; white-space: nowrap; text-decoration: none;
+}
+.tide-crosslink-banner a:hover { background: var(--primary-dark); text-decoration: none; }
+
 .market-tip {
   background: #F0FDF4; border: 1px solid #86EFAC; border-radius: 8px;
   padding: 16px; display: flex; gap: 12px; align-items: flex-start; margin: 20px 0;

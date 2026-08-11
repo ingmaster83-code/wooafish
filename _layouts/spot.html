@@ -76,6 +76,14 @@ layout: default
   <!-- 광고 -->
   <div class="ad-slot">{% include ad.html %}</div>
 
+  <!-- 우아물때 교차링크 -->
+  {% if page.nearestTide %}
+  <div class="tide-crosslink-banner">
+    <span>🌊 {{ page.spotName }} 근처 물때(만조·간조) 시각이 궁금하다면?</span>
+    <a href="https://wootide.wooahouse.com/spot/{{ page.nearestTide.slug }}/" target="_blank" rel="noopener">{{ page.nearestTide.spotName }} 물때표 보기 →</a>
+  </div>
+  {% endif %}
+
   <!-- 낚시터 소개 -->
   {% if page.point and page.point != "" %}
   <div class="market-section">

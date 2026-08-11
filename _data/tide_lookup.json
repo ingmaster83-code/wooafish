@@ -1,0 +1,2186 @@
+[
+ {
+  "slug": "인천",
+  "spotName": "인천",
+  "lot": "126.59222",
+  "lat": "37.45194",
+  "regionSlug": "incheon"
+ },
+ {
+  "slug": "평택",
+  "spotName": "평택",
+  "lot": "126.82277",
+  "lat": "36.96694",
+  "regionSlug": "gyeonggi"
+ },
+ {
+  "slug": "영광",
+  "spotName": "영광",
+  "lot": "126.42055",
+  "lat": "35.42611",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "제주",
+  "spotName": "제주",
+  "lot": "126.54305",
+  "lat": "33.52750",
+  "regionSlug": "jeju"
+ },
+ {
+  "slug": "부산",
+  "spotName": "부산",
+  "lot": "129.03527",
+  "lat": "35.09638",
+  "regionSlug": "busan"
+ },
+ {
+  "slug": "묵호",
+  "spotName": "묵호",
+  "lot": "129.11638",
+  "lat": "37.55027",
+  "regionSlug": "gangwon"
+ },
+ {
+  "slug": "목포",
+  "spotName": "목포",
+  "lot": "126.37555",
+  "lat": "34.77972",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "안산",
+  "spotName": "안산",
+  "lot": "126.64722",
+  "lat": "37.19222",
+  "regionSlug": "gyeonggi"
+ },
+ {
+  "slug": "서귀포",
+  "spotName": "서귀포",
+  "lot": "126.56166",
+  "lat": "33.24000",
+  "regionSlug": "jeju"
+ },
+ {
+  "slug": "후포",
+  "spotName": "후포",
+  "lot": "129.45305",
+  "lat": "36.67750",
+  "regionSlug": "gyeongbuk"
+ },
+ {
+  "slug": "속초",
+  "spotName": "속초",
+  "lot": "128.59416",
+  "lat": "38.20722",
+  "regionSlug": "gangwon"
+ },
+ {
+  "slug": "울릉도",
+  "spotName": "울릉도",
+  "lot": "130.91361",
+  "lat": "37.49138",
+  "regionSlug": "gyeongbuk"
+ },
+ {
+  "slug": "통영",
+  "spotName": "통영",
+  "lot": "128.43472",
+  "lat": "34.82777",
+  "regionSlug": "gyeongnam"
+ },
+ {
+  "slug": "여수",
+  "spotName": "여수",
+  "lot": "127.76555",
+  "lat": "34.74722",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "대산",
+  "spotName": "대산",
+  "lot": "126.35277",
+  "lat": "37.00750",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "군산",
+  "spotName": "군산",
+  "lot": "126.56305",
+  "lat": "35.97555",
+  "regionSlug": "jeonbuk"
+ },
+ {
+  "slug": "울산",
+  "spotName": "울산",
+  "lot": "129.38722",
+  "lat": "35.50194",
+  "regionSlug": "ulsan"
+ },
+ {
+  "slug": "추자도",
+  "spotName": "추자도",
+  "lot": "126.30027",
+  "lat": "33.96194",
+  "regionSlug": "jeju"
+ },
+ {
+  "slug": "성산포",
+  "spotName": "성산포",
+  "lot": "126.92777",
+  "lat": "33.47472",
+  "regionSlug": "jeju"
+ },
+ {
+  "slug": "모슬포",
+  "spotName": "모슬포",
+  "lot": "126.25111",
+  "lat": "33.21444",
+  "regionSlug": "jeju"
+ },
+ {
+  "slug": "장항",
+  "spotName": "장항",
+  "lot": "126.68750",
+  "lat": "36.00694",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "보령",
+  "spotName": "보령",
+  "lot": "126.48611",
+  "lat": "36.40638",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "고흥발포",
+  "spotName": "고흥발포",
+  "lot": "127.34277",
+  "lat": "34.48111",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "완도",
+  "spotName": "완도",
+  "lot": "126.75972",
+  "lat": "34.31555",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "진도",
+  "spotName": "진도",
+  "lot": "126.30861",
+  "lat": "34.37777",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "거제도",
+  "spotName": "거제도",
+  "lot": "128.69916",
+  "lat": "34.80138",
+  "regionSlug": "gyeongnam"
+ },
+ {
+  "slug": "거문도",
+  "spotName": "거문도",
+  "lot": "127.30888",
+  "lat": "34.02833",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "강화대교",
+  "spotName": "강화대교",
+  "lot": "126.52222",
+  "lat": "37.73194",
+  "regionSlug": "incheon"
+ },
+ {
+  "slug": "흑산도",
+  "spotName": "흑산도",
+  "lot": "125.43555",
+  "lat": "34.68416",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "대청도",
+  "spotName": "대청도",
+  "lot": "124.71805",
+  "lat": "37.82522",
+  "regionSlug": "incheon"
+ },
+ {
+  "slug": "어청도",
+  "spotName": "어청도",
+  "lot": "125.98472",
+  "lat": "36.11722",
+  "regionSlug": "jeonbuk"
+ },
+ {
+  "slug": "굴업도",
+  "spotName": "굴업도",
+  "lot": "125.99500",
+  "lat": "37.19444",
+  "regionSlug": "incheon"
+ },
+ {
+  "slug": "독도",
+  "spotName": "독도",
+  "lot": "131.86580",
+  "lat": "37.24058",
+  "regionSlug": "gyeongbuk"
+ },
+ {
+  "slug": "영흥도",
+  "spotName": "영흥도",
+  "lot": "126.42861",
+  "lat": "37.23861",
+  "regionSlug": "incheon"
+ },
+ {
+  "slug": "영종대교",
+  "spotName": "영종대교",
+  "lot": "126.58444",
+  "lat": "37.54555",
+  "regionSlug": "incheon"
+ },
+ {
+  "slug": "광양",
+  "spotName": "광양",
+  "lot": "127.75483",
+  "lat": "34.90367",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "태안",
+  "spotName": "태안",
+  "lot": "126.23888",
+  "lat": "36.91305",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "서천마량",
+  "spotName": "서천마량",
+  "lot": "126.49527",
+  "lat": "36.12888",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "인천송도",
+  "spotName": "인천송도",
+  "lot": "126.58611",
+  "lat": "37.33805",
+  "regionSlug": "incheon"
+ },
+ {
+  "slug": "진해",
+  "spotName": "진해",
+  "lot": "128.64305",
+  "lat": "35.14722",
+  "regionSlug": "gyeongnam"
+ },
+ {
+  "slug": "부산항신항",
+  "spotName": "부산항신항",
+  "lot": "128.78472",
+  "lat": "35.07750",
+  "regionSlug": "busan"
+ },
+ {
+  "slug": "동해항",
+  "spotName": "동해항",
+  "lot": "129.14388",
+  "lat": "37.49472",
+  "regionSlug": "gangwon"
+ },
+ {
+  "slug": "경인항",
+  "spotName": "경인항",
+  "lot": "126.60111",
+  "lat": "37.56083",
+  "regionSlug": "incheon"
+ },
+ {
+  "slug": "백령도",
+  "spotName": "백령도",
+  "lot": "124.73608",
+  "lat": "37.95565",
+  "regionSlug": "incheon"
+ },
+ {
+  "slug": "연평도",
+  "spotName": "연평도",
+  "lot": "125.71441",
+  "lat": "37.65766",
+  "regionSlug": "incheon"
+ },
+ {
+  "slug": "삼천포",
+  "spotName": "삼천포",
+  "lot": "128.06972",
+  "lat": "34.92416",
+  "regionSlug": "gyeongnam"
+ },
+ {
+  "slug": "마산",
+  "spotName": "마산",
+  "lot": "128.57638",
+  "lat": "35.19750",
+  "regionSlug": "gyeongnam"
+ },
+ {
+  "slug": "가덕도",
+  "spotName": "가덕도",
+  "lot": "128.81093",
+  "lat": "35.02417",
+  "regionSlug": "busan"
+ },
+ {
+  "slug": "교동대교",
+  "spotName": "교동대교",
+  "lot": "126.33961",
+  "lat": "37.78961",
+  "regionSlug": "incheon"
+ },
+ {
+  "slug": "덕적도",
+  "spotName": "덕적도",
+  "lot": "126.15655",
+  "lat": "37.22633",
+  "regionSlug": "incheon"
+ },
+ {
+  "slug": "안흥",
+  "spotName": "안흥",
+  "lot": "126.12955",
+  "lat": "36.67463",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "위도",
+  "spotName": "위도",
+  "lot": "126.30181",
+  "lat": "35.61808",
+  "regionSlug": "jeonbuk"
+ },
+ {
+  "slug": "포항",
+  "spotName": "포항",
+  "lot": "129.37627",
+  "lat": "36.05177",
+  "regionSlug": "gyeongbuk"
+ },
+ {
+  "slug": "여호항",
+  "spotName": "여호항",
+  "lot": "127.46916",
+  "lat": "34.66194",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "소무의도",
+  "spotName": "소무의도",
+  "lot": "126.44006",
+  "lat": "37.37306",
+  "regionSlug": "incheon"
+ },
+ {
+  "slug": "서거차도",
+  "spotName": "서거차도",
+  "lot": "125.91544",
+  "lat": "34.25142",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "검산항-SO_0742",
+  "spotName": "검산항",
+  "lot": "126.10778",
+  "lat": "34.99333",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "암태도",
+  "spotName": "암태도",
+  "lot": "126.07139",
+  "lat": "34.85306",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "평호리",
+  "spotName": "평호리",
+  "lot": "126.455",
+  "lat": "34.44806",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "원동항",
+  "spotName": "원동항",
+  "lot": "126.64861",
+  "lat": "34.39389",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "사초항",
+  "spotName": "사초항",
+  "lot": "126.76111",
+  "lat": "34.47028",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "안남리",
+  "spotName": "안남리",
+  "lot": "127.26444",
+  "lat": "34.73028",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "장문리",
+  "spotName": "장문리",
+  "lot": "128.42417",
+  "lat": "34.87361",
+  "regionSlug": "gyeongnam"
+ },
+ {
+  "slug": "독거도",
+  "spotName": "독거도",
+  "lot": "126.17861",
+  "lat": "34.25611",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "평도",
+  "spotName": "평도",
+  "lot": "127.4475",
+  "lat": "34.24583",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "낙월도",
+  "spotName": "낙월도",
+  "lot": "126.14583",
+  "lat": "35.20028",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "외연도항",
+  "spotName": "외연도항",
+  "lot": "126.08167",
+  "lat": "36.225",
+  "regionSlug": "jeonbuk"
+ },
+ {
+  "slug": "상왕등도",
+  "spotName": "상왕등도",
+  "lot": "126.11056",
+  "lat": "35.65917",
+  "regionSlug": "jeonbuk"
+ },
+ {
+  "slug": "만재도-SO_1244",
+  "spotName": "만재도",
+  "lot": "126.47222",
+  "lat": "34.21",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "어류정항",
+  "spotName": "어류정항",
+  "lot": "126.34278",
+  "lat": "37.64333",
+  "regionSlug": "incheon"
+ },
+ {
+  "slug": "대사리",
+  "spotName": "대사리",
+  "lot": "126.27819",
+  "lat": "35.15103",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "고이리",
+  "spotName": "고이리",
+  "lot": "126.29264",
+  "lat": "34.95669",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "곰소항-SO_1012",
+  "spotName": "곰소항",
+  "lot": "126.606",
+  "lat": "35.58556",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "석만도",
+  "spotName": "석만도",
+  "lot": "126.05533",
+  "lat": "35.3725",
+  "regionSlug": "jeonbuk"
+ },
+ {
+  "slug": "위도(석금방파제)",
+  "spotName": "위도(석금방파제)",
+  "lot": "126.26165",
+  "lat": "35.56964",
+  "regionSlug": "jeonbuk"
+ },
+ {
+  "slug": "제부도부근(T-1)",
+  "spotName": "제부도부근(T-1)",
+  "lot": "126.45249",
+  "lat": "37.12142",
+  "regionSlug": "incheon"
+ },
+ {
+  "slug": "제부도부근(T-2)",
+  "spotName": "제부도부근(T-2)",
+  "lot": "126.52025",
+  "lat": "37.12768",
+  "regionSlug": "gyeonggi"
+ },
+ {
+  "slug": "제부도부근(T-3)",
+  "spotName": "제부도부근(T-3)",
+  "lot": "126.57419",
+  "lat": "37.16367",
+  "regionSlug": "gyeonggi"
+ },
+ {
+  "slug": "제부도부근(T-4)",
+  "spotName": "제부도부근(T-4)",
+  "lot": "126.60281",
+  "lat": "37.10698",
+  "regionSlug": "gyeonggi"
+ },
+ {
+  "slug": "제부도부근(T-5)",
+  "spotName": "제부도부근(T-5)",
+  "lot": "126.67448",
+  "lat": "37.03973",
+  "regionSlug": "gyeonggi"
+ },
+ {
+  "slug": "제부도부근(T-6)",
+  "spotName": "제부도부근(T-6)",
+  "lot": "126.70198",
+  "lat": "37.00891",
+  "regionSlug": "gyeonggi"
+ },
+ {
+  "slug": "남성항",
+  "spotName": "남성항",
+  "lot": "126.60278",
+  "lat": "34.31919",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "청용리",
+  "spotName": "청용리",
+  "lot": "126.77625",
+  "lat": "34.42408",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "죽청리",
+  "spotName": "죽청리",
+  "lot": "126.74",
+  "lat": "34.34419",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "능포항-SO_1032",
+  "spotName": "능포항",
+  "lot": "128.69917",
+  "lat": "34.80139",
+  "regionSlug": "gyeongnam"
+ },
+ {
+  "slug": "어청도북측",
+  "spotName": "어청도북측",
+  "lot": "125.99917",
+  "lat": "36.16694",
+  "regionSlug": "jeonbuk"
+ },
+ {
+  "slug": "어청도남측",
+  "spotName": "어청도남측",
+  "lot": "125.93417",
+  "lat": "36.00389",
+  "regionSlug": "jeonbuk"
+ },
+ {
+  "slug": "상왕등도북서측",
+  "spotName": "상왕등도북서측",
+  "lot": "126.00083",
+  "lat": "35.74944",
+  "regionSlug": "jeonbuk"
+ },
+ {
+  "slug": "선재도북측",
+  "spotName": "선재도북측",
+  "lot": "126.51139",
+  "lat": "37.33111",
+  "regionSlug": "incheon"
+ },
+ {
+  "slug": "강화외포",
+  "spotName": "강화외포",
+  "lot": "126.3725",
+  "lat": "37.70083",
+  "regionSlug": "incheon"
+ },
+ {
+  "slug": "북수도",
+  "spotName": "북수도",
+  "lot": "126.21556",
+  "lat": "37.33944",
+  "regionSlug": "incheon"
+ },
+ {
+  "slug": "자월도남측",
+  "spotName": "자월도남측",
+  "lot": "126.27722",
+  "lat": "37.21972",
+  "regionSlug": "incheon"
+ },
+ {
+  "slug": "문갑도동측",
+  "spotName": "문갑도동측",
+  "lot": "126.14667",
+  "lat": "37.18361",
+  "regionSlug": "incheon"
+ },
+ {
+  "slug": "선갑도남측",
+  "spotName": "선갑도남측",
+  "lot": "126.11806",
+  "lat": "37.02556",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "가로림만입구",
+  "spotName": "가로림만입구",
+  "lot": "126.30972",
+  "lat": "36.97972",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "서수도",
+  "spotName": "서수도",
+  "lot": "126.00333",
+  "lat": "36.89056",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "녹도북측",
+  "spotName": "녹도북측",
+  "lot": "126.29944",
+  "lat": "36.30778",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "연도서측",
+  "spotName": "연도서측",
+  "lot": "126.24306",
+  "lat": "36.08278",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "거제(오비리)",
+  "spotName": "거제(오비리)",
+  "lot": "128.62232",
+  "lat": "34.90186",
+  "regionSlug": "gyeongnam"
+ },
+ {
+  "slug": "인천대교남측(Elipsoid)",
+  "spotName": "인천대교남측(Elipsoid)",
+  "lot": "126.54861",
+  "lat": "37.39778",
+  "regionSlug": "incheon"
+ },
+ {
+  "slug": "풍도북측(Elipsoid)",
+  "spotName": "풍도북측(Elipsoid)",
+  "lot": "126.38194",
+  "lat": "37.17361",
+  "regionSlug": "incheon"
+ },
+ {
+  "slug": "원산도북측(Elipsoid)",
+  "spotName": "원산도북측(Elipsoid)",
+  "lot": "126.46667",
+  "lat": "36.37806",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "압해도서측(Elipsoid)",
+  "spotName": "압해도서측(Elipsoid)",
+  "lot": "126.20472",
+  "lat": "34.85028",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "목포북항북측(Elipsoid)",
+  "spotName": "목포북항북측(Elipsoid)",
+  "lot": "126.36694",
+  "lat": "34.81472",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "불무기도북측(Elipsoid)",
+  "spotName": "불무기도북측(Elipsoid)",
+  "lot": "126.22639",
+  "lat": "34.7925",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "장산도동측(Elipsoid)",
+  "spotName": "장산도동측(Elipsoid)",
+  "lot": "126.22278",
+  "lat": "34.66417",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "광양항(Elipsoid)",
+  "spotName": "광양항(Elipsoid)",
+  "lot": "127.7875",
+  "lat": "34.84389",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "통영항입구(Elipsoid)",
+  "spotName": "통영항입구(Elipsoid)",
+  "lot": "128.44611",
+  "lat": "34.79361",
+  "regionSlug": "gyeongnam"
+ },
+ {
+  "slug": "매물도북서측(Elipsoid)",
+  "spotName": "매물도북서측(Elipsoid)",
+  "lot": "128.48667",
+  "lat": "34.6675",
+  "regionSlug": "gyeongnam"
+ },
+ {
+  "slug": "부도수도(Elipsoid)",
+  "spotName": "부도수도(Elipsoid)",
+  "lot": "128.63083",
+  "lat": "35.09056",
+  "regionSlug": "gyeongnam"
+ },
+ {
+  "slug": "낙동포(Elipsoid)",
+  "spotName": "낙동포(Elipsoid)",
+  "lot": "128.9125",
+  "lat": "34.98222",
+  "regionSlug": "busan"
+ },
+ {
+  "slug": "부산항입구(Elipsoid)",
+  "spotName": "부산항입구(Elipsoid)",
+  "lot": "129.11722",
+  "lat": "35.08278",
+  "regionSlug": "busan"
+ },
+ {
+  "slug": "울산신항동측(Elipsoid)",
+  "spotName": "울산신항동측(Elipsoid)",
+  "lot": "129.39917",
+  "lat": "35.41639",
+  "regionSlug": "ulsan"
+ },
+ {
+  "slug": "난지도북측",
+  "spotName": "난지도북측",
+  "lot": "126.40556",
+  "lat": "37.07417",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "와도서측",
+  "spotName": "와도서측",
+  "lot": "125.86639",
+  "lat": "36.62083",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "안좌도서측",
+  "spotName": "안좌도서측",
+  "lot": "126.09333",
+  "lat": "34.77639",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "비금수도",
+  "spotName": "비금수도",
+  "lot": "125.92278",
+  "lat": "34.71556",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "흑일도남측",
+  "spotName": "흑일도남측",
+  "lot": "126.54944",
+  "lat": "34.25222",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "여수해협(2)",
+  "spotName": "여수해협(2)",
+  "lot": "127.75222",
+  "lat": "34.73389",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "여수해만입구",
+  "spotName": "여수해만입구",
+  "lot": "127.91722",
+  "lat": "34.61722",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "두미도북측",
+  "spotName": "두미도북측",
+  "lot": "128.20056",
+  "lat": "34.73361",
+  "regionSlug": "gyeongnam"
+ },
+ {
+  "slug": "아랫섬동측",
+  "spotName": "아랫섬동측",
+  "lot": "128.30028",
+  "lat": "34.81639",
+  "regionSlug": "gyeongnam"
+ },
+ {
+  "slug": "가조도수도",
+  "spotName": "가조도수도",
+  "lot": "128.56611",
+  "lat": "34.96694",
+  "regionSlug": "gyeongnam"
+ },
+ {
+  "slug": "진해만",
+  "spotName": "진해만",
+  "lot": "128.66",
+  "lat": "35.05028",
+  "regionSlug": "gyeongnam"
+ },
+ {
+  "slug": "거제도동측",
+  "spotName": "거제도동측",
+  "lot": "128.76694",
+  "lat": "34.94972",
+  "regionSlug": "busan"
+ },
+ {
+  "slug": "해운대전면",
+  "spotName": "해운대전면",
+  "lot": "129.16778",
+  "lat": "35.13333",
+  "regionSlug": "busan"
+ },
+ {
+  "slug": "대왕암남측",
+  "spotName": "대왕암남측",
+  "lot": "129.44444",
+  "lat": "35.48667",
+  "regionSlug": "ulsan"
+ },
+ {
+  "slug": "어불도서측",
+  "spotName": "어불도서측",
+  "lot": "126.40092",
+  "lat": "34.33647",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "독거군도북측",
+  "spotName": "독거군도북측",
+  "lot": "126.19794",
+  "lat": "34.28231",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "외모군도남측",
+  "spotName": "외모군도남측",
+  "lot": "126.38361",
+  "lat": "34.16772",
+  "regionSlug": "jeju"
+ },
+ {
+  "slug": "인천-제주항로(1)",
+  "spotName": "인천-제주항로(1)",
+  "lot": "126.40667",
+  "lat": "37.27969",
+  "regionSlug": "incheon"
+ },
+ {
+  "slug": "함평만입구",
+  "spotName": "함평만입구",
+  "lot": "126.35153",
+  "lat": "35.15667",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "삼천포-제주항로(2)",
+  "spotName": "삼천포-제주항로(2)",
+  "lot": "127.71019",
+  "lat": "34.29353",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "인천-제주항로(2)",
+  "spotName": "인천-제주항로(2)",
+  "lot": "126.24653",
+  "lat": "37.29419",
+  "regionSlug": "incheon"
+ },
+ {
+  "slug": "경지서수도",
+  "spotName": "경지서수도",
+  "lot": "125.80167",
+  "lat": "34.69639",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "송이도북측",
+  "spotName": "송이도북측",
+  "lot": "126.1665",
+  "lat": "35.34969",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "연평도남측",
+  "spotName": "연평도남측",
+  "lot": "125.78769",
+  "lat": "37.39811",
+  "regionSlug": "incheon"
+ },
+ {
+  "slug": "인천-백령항로",
+  "spotName": "인천-백령항로",
+  "lot": "125.6",
+  "lat": "37.28431",
+  "regionSlug": "incheon"
+ },
+ {
+  "slug": "수우도서측",
+  "spotName": "수우도서측",
+  "lot": "128.11733",
+  "lat": "34.83322",
+  "regionSlug": "gyeongnam"
+ },
+ {
+  "slug": "고군산군도서측",
+  "spotName": "고군산군도서측",
+  "lot": "126.35072",
+  "lat": "35.83031",
+  "regionSlug": "jeonbuk"
+ },
+ {
+  "slug": "가덕도남측",
+  "spotName": "가덕도남측",
+  "lot": "125.85406",
+  "lat": "36.91731",
+  "regionSlug": "incheon"
+ },
+ {
+  "slug": "거금수도",
+  "spotName": "거금수도",
+  "lot": "127.24992",
+  "lat": "34.48458",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "북격렬비열도-SO_1220",
+  "spotName": "북격렬비열도",
+  "lot": "125.56111",
+  "lat": "36.62389",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "동율리",
+  "spotName": "동율리",
+  "lot": "127.09666",
+  "lat": "34.66751",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "고흥금진항",
+  "spotName": "고흥금진항",
+  "lot": "127.12306",
+  "lat": "34.49028",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "우도",
+  "spotName": "우도",
+  "lot": "127.3088",
+  "lat": "34.71865",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "국도항",
+  "spotName": "국도항",
+  "lot": "128.44278",
+  "lat": "34.54667",
+  "regionSlug": "gyeongnam"
+ },
+ {
+  "slug": "의항항",
+  "spotName": "의항항",
+  "lot": "126.17278",
+  "lat": "36.83444",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "고파도",
+  "spotName": "고파도",
+  "lot": "126.34111",
+  "lat": "36.91139",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "구도항",
+  "spotName": "구도항",
+  "lot": "126.32556",
+  "lat": "36.82833",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "화옹방조제",
+  "spotName": "화옹방조제",
+  "lot": "126.70167",
+  "lat": "37.09722",
+  "regionSlug": "gyeonggi"
+ },
+ {
+  "slug": "평택(LNG부두)",
+  "spotName": "평택(LNG부두)",
+  "lot": "126.77889",
+  "lat": "37.00139",
+  "regionSlug": "gyeonggi"
+ },
+ {
+  "slug": "천리포",
+  "spotName": "천리포",
+  "lot": "126.14694",
+  "lat": "36.80333",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "어은돌",
+  "spotName": "어은돌",
+  "lot": "126.1275",
+  "lat": "36.75",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "통개항",
+  "spotName": "통개항",
+  "lot": "126.13806",
+  "lat": "36.71917",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "도황리(채석포)",
+  "spotName": "도황리(채석포)",
+  "lot": "126.23111",
+  "lat": "36.69306",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "안면암",
+  "spotName": "안면암",
+  "lot": "126.38333",
+  "lat": "36.56056",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "남당항",
+  "spotName": "남당항",
+  "lot": "126.46636",
+  "lat": "36.53489",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "원산도-SO_0371",
+  "spotName": "원산도",
+  "lot": "126.435",
+  "lat": "36.38361",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "무창포-SO_0373",
+  "spotName": "무창포",
+  "lot": "126.53444",
+  "lat": "36.25056",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "외연도",
+  "spotName": "외연도",
+  "lot": "126.08028",
+  "lat": "36.22639",
+  "regionSlug": "jeonbuk"
+ },
+ {
+  "slug": "방축도",
+  "spotName": "방축도",
+  "lot": "126.3775",
+  "lat": "35.84778",
+  "regionSlug": "jeonbuk"
+ },
+ {
+  "slug": "가력도",
+  "spotName": "가력도",
+  "lot": "126.53111",
+  "lat": "35.72472",
+  "regionSlug": "jeonbuk"
+ },
+ {
+  "slug": "임자도(진리)",
+  "spotName": "임자도(진리)",
+  "lot": "126.12111",
+  "lat": "35.08056",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "용정리(함평만)",
+  "spotName": "용정리(함평만)",
+  "lot": "126.40861",
+  "lat": "35.10028",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "거차수도",
+  "spotName": "거차수도",
+  "lot": "125.20333",
+  "lat": "34.57611",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "홍도",
+  "spotName": "홍도",
+  "lot": "125.19417",
+  "lat": "34.68111",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "신양항",
+  "spotName": "신양항",
+  "lot": "126.325",
+  "lat": "33.94083",
+  "regionSlug": "jeju"
+ },
+ {
+  "slug": "2014-15년 장기조석관측(우수영항 193일)",
+  "spotName": "2014-15년 장기조석관측(우수영항 193일)",
+  "lot": "126.31028",
+  "lat": "34.58833",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "GSCaltex",
+  "spotName": "GSCaltex",
+  "lot": "127.72722",
+  "lat": "34.86306",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "창리",
+  "spotName": "창리",
+  "lot": "126.35528",
+  "lat": "36.62194",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "울산-SO_0425",
+  "spotName": "울산",
+  "lot": "129.3875",
+  "lat": "35.50333",
+  "regionSlug": "ulsan"
+ },
+ {
+  "slug": "사창리",
+  "spotName": "사창리",
+  "lot": "126.30528",
+  "lat": "36.84278",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "동천리",
+  "spotName": "동천리",
+  "lot": "128.06278",
+  "lat": "34.81917",
+  "regionSlug": "gyeongnam"
+ },
+ {
+  "slug": "야미도",
+  "spotName": "야미도",
+  "lot": "126.48833",
+  "lat": "35.84028",
+  "regionSlug": "jeonbuk"
+ },
+ {
+  "slug": "팔미도",
+  "spotName": "팔미도",
+  "lot": "126.51417",
+  "lat": "37.35833",
+  "regionSlug": "incheon"
+ },
+ {
+  "slug": "선갑도",
+  "spotName": "선갑도",
+  "lot": "126.06472",
+  "lat": "37.09167",
+  "regionSlug": "incheon"
+ },
+ {
+  "slug": "대난지도",
+  "spotName": "대난지도",
+  "lot": "126.45139",
+  "lat": "37.05361",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "가의도",
+  "spotName": "가의도",
+  "lot": "126.06889",
+  "lat": "36.67889",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "녹도",
+  "spotName": "녹도",
+  "lot": "126.26889",
+  "lat": "36.26972",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "구시포",
+  "spotName": "구시포",
+  "lot": "126.425",
+  "lat": "35.44861",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "강화도(건평)",
+  "spotName": "강화도(건평)",
+  "lot": "126.39778",
+  "lat": "37.68028",
+  "regionSlug": "incheon"
+ },
+ {
+  "slug": "시화조력",
+  "spotName": "시화조력",
+  "lot": "126.61139",
+  "lat": "37.31056",
+  "regionSlug": "incheon"
+ },
+ {
+  "slug": "소무의도-SO_0348",
+  "spotName": "소무의도",
+  "lot": "126.44111",
+  "lat": "37.37417",
+  "regionSlug": "incheon"
+ },
+ {
+  "slug": "오이도",
+  "spotName": "오이도",
+  "lot": "126.6675",
+  "lat": "37.35194",
+  "regionSlug": "incheon"
+ },
+ {
+  "slug": "덕적도(진리)",
+  "spotName": "덕적도(진리)",
+  "lot": "126.15833",
+  "lat": "37.2275",
+  "regionSlug": "incheon"
+ },
+ {
+  "slug": "2013 백아도",
+  "spotName": "2013 백아도",
+  "lot": "125.965",
+  "lat": "37.08139",
+  "regionSlug": "incheon"
+ },
+ {
+  "slug": "격포항-SO_0455",
+  "spotName": "격포항",
+  "lot": "126.4675",
+  "lat": "35.6225",
+  "regionSlug": "jeonbuk"
+ },
+ {
+  "slug": "관매도",
+  "spotName": "관매도",
+  "lot": "126.04289",
+  "lat": "34.23914",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "가파도",
+  "spotName": "가파도",
+  "lot": "126.27056",
+  "lat": "33.175",
+  "regionSlug": "jeju"
+ },
+ {
+  "slug": "구룡포항",
+  "spotName": "구룡포항",
+  "lot": "129.55833",
+  "lat": "35.99083",
+  "regionSlug": "gyeongbuk"
+ },
+ {
+  "slug": "궁시도",
+  "spotName": "궁시도",
+  "lot": "125.86139",
+  "lat": "36.66361",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "달도리",
+  "spotName": "달도리",
+  "lot": "126.64361",
+  "lat": "34.39333",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "달리도",
+  "spotName": "달리도",
+  "lot": "126.32944",
+  "lat": "34.77778",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "대부도남서",
+  "spotName": "대부도남서",
+  "lot": "126.52667",
+  "lat": "37.18778",
+  "regionSlug": "incheon"
+ },
+ {
+  "slug": "대아도",
+  "spotName": "대아도",
+  "lot": "126.41639",
+  "lat": "36.4675",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "도원리",
+  "spotName": "도원리",
+  "lot": "126.33861",
+  "lat": "34.915",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "마라도",
+  "spotName": "마라도",
+  "lot": "126.27",
+  "lat": "33.12194",
+  "regionSlug": "jeju"
+ },
+ {
+  "slug": "맥전포",
+  "spotName": "맥전포",
+  "lot": "128.16667",
+  "lat": "34.90194",
+  "regionSlug": "gyeongnam"
+ },
+ {
+  "slug": "밀매도",
+  "spotName": "밀매도",
+  "lot": "126.33167",
+  "lat": "34.25",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "사양도",
+  "spotName": "사양도",
+  "lot": "127.44667",
+  "lat": "34.47389",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "서정리",
+  "spotName": "서정리",
+  "lot": "128.5825",
+  "lat": "34.84667",
+  "regionSlug": "gyeongnam"
+ },
+ {
+  "slug": "세어도",
+  "spotName": "세어도",
+  "lot": "126.56917",
+  "lat": "37.57472",
+  "regionSlug": "incheon"
+ },
+ {
+  "slug": "예단포",
+  "spotName": "예단포",
+  "lot": "126.49417",
+  "lat": "37.51889",
+  "regionSlug": "incheon"
+ },
+ {
+  "slug": "요력도",
+  "spotName": "요력도",
+  "lot": "126.19",
+  "lat": "34.72889",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "월곶포구",
+  "spotName": "월곶포구",
+  "lot": "126.72778",
+  "lat": "37.38528",
+  "regionSlug": "incheon"
+ },
+ {
+  "slug": "잠진도",
+  "spotName": "잠진도",
+  "lot": "126.41528",
+  "lat": "37.41528",
+  "regionSlug": "incheon"
+ },
+ {
+  "slug": "풍남항",
+  "spotName": "풍남항",
+  "lot": "127.24472",
+  "lat": "34.51889",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "하섬",
+  "spotName": "하섬",
+  "lot": "126.4825",
+  "lat": "35.665",
+  "regionSlug": "jeonbuk"
+ },
+ {
+  "slug": "하우목동항",
+  "spotName": "하우목동항",
+  "lot": "126.94222",
+  "lat": "33.50944",
+  "regionSlug": "jeju"
+ },
+ {
+  "slug": "회진항",
+  "spotName": "회진항",
+  "lot": "126.94167",
+  "lat": "34.4825",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "울산항",
+  "spotName": "울산항",
+  "lot": "129.435",
+  "lat": "35.49944",
+  "regionSlug": "ulsan"
+ },
+ {
+  "slug": "원산도-SO_0916",
+  "spotName": "원산도",
+  "lot": "126.43778",
+  "lat": "36.37667",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "죽도-SO_0917",
+  "spotName": "죽도",
+  "lot": "126.53917",
+  "lat": "36.275",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "홍원항",
+  "spotName": "홍원항",
+  "lot": "126.50611",
+  "lat": "36.16111",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "무창포-SO_0922",
+  "spotName": "무창포",
+  "lot": "126.52417",
+  "lat": "36.25083",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "홍원항등표",
+  "spotName": "홍원항등표",
+  "lot": "126.47528",
+  "lat": "36.15528",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "북구항",
+  "spotName": "북구항",
+  "lot": "128.18181",
+  "lat": "34.71017",
+  "regionSlug": "gyeongnam"
+ },
+ {
+  "slug": "강정",
+  "spotName": "강정",
+  "lot": "126.47528",
+  "lat": "33.2275",
+  "regionSlug": "jeju"
+ },
+ {
+  "slug": "신양",
+  "spotName": "신양",
+  "lot": "126.32667",
+  "lat": "33.94306",
+  "regionSlug": "jeju"
+ },
+ {
+  "slug": "남해도 남측",
+  "spotName": "남해도 남측",
+  "lot": "127.97917",
+  "lat": "34.57556",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "갈도 남측",
+  "spotName": "갈도 남측",
+  "lot": "128.1625",
+  "lat": "34.53417",
+  "regionSlug": "gyeongnam"
+ },
+ {
+  "slug": "갈곶도 남동측",
+  "spotName": "갈곶도 남동측",
+  "lot": "128.7175",
+  "lat": "34.71806",
+  "regionSlug": "gyeongnam"
+ },
+ {
+  "slug": "추도 남서측",
+  "spotName": "추도 남서측",
+  "lot": "128.73333",
+  "lat": "34.81333",
+  "regionSlug": "gyeongnam"
+ },
+ {
+  "slug": "율도",
+  "spotName": "율도",
+  "lot": "126.19778",
+  "lat": "34.57775",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "수우도-SO_0997",
+  "spotName": "수우도",
+  "lot": "128.13722",
+  "lat": "34.83472",
+  "regionSlug": "gyeongnam"
+ },
+ {
+  "slug": "상노대도",
+  "spotName": "상노대도",
+  "lot": "128.23306",
+  "lat": "34.67556",
+  "regionSlug": "gyeongnam"
+ },
+ {
+  "slug": "신안중공업",
+  "spotName": "신안중공업",
+  "lot": "126.15961",
+  "lat": "35.072",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "자동리",
+  "spotName": "자동리",
+  "lot": "126.26156",
+  "lat": "35.053",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "병풍도북측",
+  "spotName": "병풍도북측",
+  "lot": "126.21369",
+  "lat": "34.98581",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "함평부근(톱머리)",
+  "spotName": "함평부근(톱머리)",
+  "lot": "126.38972",
+  "lat": "34.96611",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "고군산군도북측",
+  "spotName": "고군산군도북측",
+  "lot": "126.42694",
+  "lat": "35.9525",
+  "regionSlug": "jeonbuk"
+ },
+ {
+  "slug": "가사도동측",
+  "spotName": "가사도동측",
+  "lot": "126.12028",
+  "lat": "34.47833",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "소안수도",
+  "spotName": "소안수도",
+  "lot": "126.63139",
+  "lat": "34.18111",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "소모도북측",
+  "spotName": "소모도북측",
+  "lot": "126.80528",
+  "lat": "34.2525",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "봉도동측",
+  "spotName": "봉도동측",
+  "lot": "128.29694",
+  "lat": "34.66833",
+  "regionSlug": "gyeongnam"
+ },
+ {
+  "slug": "선소항",
+  "spotName": "선소항",
+  "lot": "127.91795",
+  "lat": "34.84763",
+  "regionSlug": "gyeongnam"
+ },
+ {
+  "slug": "동갈화항",
+  "spotName": "동갈화항",
+  "lot": "127.83493",
+  "lat": "34.90097",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "문의리",
+  "spotName": "문의리",
+  "lot": "127.90583",
+  "lat": "34.943",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "월정리",
+  "spotName": "월정리",
+  "lot": "127.40536",
+  "lat": "34.74631",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "득량도",
+  "spotName": "득량도",
+  "lot": "127.09922",
+  "lat": "34.59544",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "월양항",
+  "spotName": "월양항",
+  "lot": "126.83711",
+  "lat": "34.31364",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "넙도",
+  "spotName": "넙도",
+  "lot": "126.51842",
+  "lat": "34.19714",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "자은도",
+  "spotName": "자은도",
+  "lot": "126.03458",
+  "lat": "34.92369",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "팔금도",
+  "spotName": "팔금도",
+  "lot": "126.17289",
+  "lat": "34.79494",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "비금도가산",
+  "spotName": "비금도가산",
+  "lot": "126.00142",
+  "lat": "34.76525",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "학가리",
+  "spotName": "학가리",
+  "lot": "126.47789",
+  "lat": "34.38728",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "신안군부근(JGNR)",
+  "spotName": "신안군부근(JGNR)",
+  "lot": "126.33232",
+  "lat": "34.99297",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "신안군부근(SW)",
+  "spotName": "신안군부근(SW)",
+  "lot": "126.29503",
+  "lat": "34.96211",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "고흥부근(T-3)",
+  "spotName": "고흥부근(T-3)",
+  "lot": "127.29616",
+  "lat": "34.47083",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "고흥부근(T-5)",
+  "spotName": "고흥부근(T-5)",
+  "lot": "127.43987",
+  "lat": "34.52974",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "고흥부근(T-7)",
+  "spotName": "고흥부근(T-7)",
+  "lot": "127.48073",
+  "lat": "34.57626",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "고흥부근(T-8)",
+  "spotName": "고흥부근(T-8)",
+  "lot": "127.65101",
+  "lat": "34.73718",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "군산부근(비안도)",
+  "spotName": "군산부근(비안도)",
+  "lot": "126.46269",
+  "lat": "35.73528",
+  "regionSlug": "jeonbuk"
+ },
+ {
+  "slug": "군산부근(외도)",
+  "spotName": "군산부근(외도)",
+  "lot": "126.31175",
+  "lat": "36.453",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "동호항",
+  "spotName": "동호항",
+  "lot": "126.47811",
+  "lat": "35.53881",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "연구리",
+  "spotName": "연구리",
+  "lot": "128.62547",
+  "lat": "34.99264",
+  "regionSlug": "gyeongnam"
+ },
+ {
+  "slug": "호령항",
+  "spotName": "호령항",
+  "lot": "127.64647",
+  "lat": "34.56656",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "내호리",
+  "spotName": "내호리",
+  "lot": "126.07081",
+  "lat": "34.74133",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "영전리",
+  "spotName": "영전리",
+  "lot": "126.60711",
+  "lat": "34.33342",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "다사항",
+  "spotName": "다사항",
+  "lot": "126.59392",
+  "lat": "36.09258",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "마서면",
+  "spotName": "마서면",
+  "lot": "126.66122",
+  "lat": "36.00811",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "십이동파도",
+  "spotName": "십이동파도",
+  "lot": "126.22367",
+  "lat": "35.99144",
+  "regionSlug": "jeonbuk"
+ },
+ {
+  "slug": "곰소항-SO_1120",
+  "spotName": "곰소항",
+  "lot": "126.60478",
+  "lat": "35.58544",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "전장포",
+  "spotName": "전장포",
+  "lot": "126.14472",
+  "lat": "35.15372",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "하조도-SO_1122",
+  "spotName": "하조도",
+  "lot": "126.00311",
+  "lat": "34.30583",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "월내리",
+  "spotName": "월내리",
+  "lot": "126.28408",
+  "lat": "34.75678",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "인천부근(월곶)",
+  "spotName": "인천부근(월곶)",
+  "lot": "126.72739",
+  "lat": "37.38544",
+  "regionSlug": "incheon"
+ },
+ {
+  "slug": "인천부근(방아머리)",
+  "spotName": "인천부근(방아머리)",
+  "lot": "126.58611",
+  "lat": "37.33806",
+  "regionSlug": "incheon"
+ },
+ {
+  "slug": "덕적도부근(입파도)",
+  "spotName": "덕적도부근(입파도)",
+  "lot": "126.54278",
+  "lat": "37.10453",
+  "regionSlug": "gyeonggi"
+ },
+ {
+  "slug": "함평부근(증도)",
+  "spotName": "함평부근(증도)",
+  "lot": "126.1825",
+  "lat": "34.99667",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "함평부근(성내리)",
+  "spotName": "함평부근(성내리)",
+  "lot": "126.3075",
+  "lat": "34.92639",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "남해부근(율촌)",
+  "spotName": "남해부근(율촌)",
+  "lot": "127.63549",
+  "lat": "34.88868",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "남해부근(양아리)",
+  "spotName": "남해부근(양아리)",
+  "lot": "127.95657",
+  "lat": "34.72219",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "평택부근(장고항)",
+  "spotName": "평택부근(장고항)",
+  "lot": "126.56",
+  "lat": "37.03389",
+  "regionSlug": "gyeonggi"
+ },
+ {
+  "slug": "평택부근(고대관리부두)",
+  "spotName": "평택부근(고대관리부두)",
+  "lot": "126.74583",
+  "lat": "36.98806",
+  "regionSlug": "gyeonggi"
+ },
+ {
+  "slug": "영종도(왕산)",
+  "spotName": "영종도(왕산)",
+  "lot": "126.35892",
+  "lat": "37.45808",
+  "regionSlug": "incheon"
+ },
+ {
+  "slug": "울도-SO_0563",
+  "spotName": "울도",
+  "lot": "125.995",
+  "lat": "37.03556",
+  "regionSlug": "incheon"
+ },
+ {
+  "slug": "송공항",
+  "spotName": "송공항",
+  "lot": "126.22528",
+  "lat": "34.84833",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "양포항-SO_0573",
+  "spotName": "양포항",
+  "lot": "129.5275",
+  "lat": "35.88139",
+  "regionSlug": "gyeongbuk"
+ },
+ {
+  "slug": "중항리1day",
+  "spotName": "중항리1day",
+  "lot": "128.20333",
+  "lat": "34.57611",
+  "regionSlug": "gyeongnam"
+ },
+ {
+  "slug": "궁평항",
+  "spotName": "궁평항",
+  "lot": "126.67675",
+  "lat": "37.11392",
+  "regionSlug": "gyeonggi"
+ },
+ {
+  "slug": "북형제도",
+  "spotName": "북형제도",
+  "lot": "128.97328",
+  "lat": "34.93339",
+  "regionSlug": "busan"
+ },
+ {
+  "slug": "웅도",
+  "spotName": "웅도",
+  "lot": "126.37069",
+  "lat": "36.91542",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "어청도서측",
+  "spotName": "어청도서측",
+  "lot": "125.96694",
+  "lat": "36.11417",
+  "regionSlug": "jeonbuk"
+ },
+ {
+  "slug": "위도동측",
+  "spotName": "위도동측",
+  "lot": "126.365",
+  "lat": "35.62472",
+  "regionSlug": "jeonbuk"
+ },
+ {
+  "slug": "독거군도",
+  "spotName": "독거군도",
+  "lot": "126.22639",
+  "lat": "34.23",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "왜목항",
+  "spotName": "왜목항",
+  "lot": "126.53028",
+  "lat": "37.04917",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "오지리",
+  "spotName": "오지리",
+  "lot": "126.33278",
+  "lat": "36.97056",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "간월도항",
+  "spotName": "간월도항",
+  "lot": "126.40611",
+  "lat": "36.60583",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "계마항",
+  "spotName": "계마항",
+  "lot": "126.40194",
+  "lat": "35.395",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "오천항",
+  "spotName": "오천항",
+  "lot": "126.51972",
+  "lat": "36.43917",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "가력도항",
+  "spotName": "가력도항",
+  "lot": "126.53167",
+  "lat": "35.72611",
+  "regionSlug": "jeonbuk"
+ },
+ {
+  "slug": "2014-15년 장기조석관측(쉬미항 193일)",
+  "spotName": "2014-15년 장기조석관측(쉬미항 193일)",
+  "lot": "126.20333",
+  "lat": "34.57611",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "개야도",
+  "spotName": "개야도",
+  "lot": "126.20333",
+  "lat": "36.61",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "화당리-SO_0764",
+  "spotName": "화당리",
+  "lot": "128.40953",
+  "lat": "34.98831",
+  "regionSlug": "gyeongnam"
+ },
+ {
+  "slug": "삽시도항",
+  "spotName": "삽시도항",
+  "lot": "126.36456",
+  "lat": "36.35472",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "죽도-SO_0770",
+  "spotName": "죽도",
+  "lot": "126.43722",
+  "lat": "36.52222",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "영목항-SO_0772",
+  "spotName": "영목항",
+  "lot": "126.42694",
+  "lat": "36.399",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "간월도",
+  "spotName": "간월도",
+  "lot": "126.40675",
+  "lat": "36.60636",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "몽산포-SO_0775",
+  "spotName": "몽산포",
+  "lot": "126.26981",
+  "lat": "36.66917",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "금당수도",
+  "spotName": "금당수도",
+  "lot": "127.07417",
+  "lat": "34.45681",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "수룡항포구-SO_0776",
+  "spotName": "수룡항포구",
+  "lot": "126.47411",
+  "lat": "36.51872",
+  "regionSlug": "chungnam"
+ },
+ {
+  "slug": "외병도",
+  "spotName": "외병도",
+  "lot": "125.94236",
+  "lat": "34.37347",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "상왕등도1day",
+  "spotName": "상왕등도1day",
+  "lot": "126.20333",
+  "lat": "35.59306",
+  "regionSlug": "jeonbuk"
+ },
+ {
+  "slug": "하의도서측",
+  "spotName": "하의도서측",
+  "lot": "126.01881",
+  "lat": "34.59022",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "대령도1day",
+  "spotName": "대령도1day",
+  "lot": "125.20333",
+  "lat": "36.61",
+  "regionSlug": "jeonbuk"
+ },
+ {
+  "slug": "홍도항",
+  "spotName": "홍도항",
+  "lot": "125.195",
+  "lat": "34.68111",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "소안항",
+  "spotName": "소안항",
+  "lot": "126.63194",
+  "lat": "34.15",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "시산항",
+  "spotName": "시산항",
+  "lot": "127.26167",
+  "lat": "34.39444",
+  "regionSlug": "jeonnam"
+ },
+ {
+  "slug": "봉우항",
+  "spotName": "봉우항",
+  "lot": "127.9275",
+  "lat": "34.93278",
+  "regionSlug": "gyeongnam"
+ },
+ {
+  "slug": "백령도1day",
+  "spotName": "백령도1day",
+  "lot": "124.20333",
+  "lat": "37.62694",
+  "regionSlug": "incheon"
+ }
+]

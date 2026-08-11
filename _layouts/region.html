@@ -16,6 +16,15 @@ layout: default
     <p class="list-count">총 {{ page.spots | size }}곳</p>
   </div>
 
+  <!-- 우아물때 교차링크 -->
+  {% assign tide_regions = "incheon,gyeonggi,jeonnam,jeju,busan,gyeongnam,gyeongbuk,gangwon,chungnam,jeonbuk,ulsan" | split: ',' %}
+  {% if tide_regions contains page.region_slug %}
+  <div class="tide-crosslink-banner">
+    <span>🌊 {{ page.region }} 물때(만조·간조) 정보가 궁금하다면?</span>
+    <a href="https://wootide.wooahouse.com/region/{{ page.region_slug }}/" target="_blank" rel="noopener">{{ page.region }} 물때표 보기 →</a>
+  </div>
+  {% endif %}
+
   <!-- 광고 -->
   <div class="ad-slot">{% include ad.html %}</div>
 

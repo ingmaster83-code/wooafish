@@ -252,6 +252,24 @@ img { max-width: 100%; }
 .market-section h2 { font-size: 1.05rem; font-weight: 700; margin-bottom: 14px; color: var(--text); border-bottom: 2px solid var(--primary-light); padding-bottom: 8px; }
 .market-description { line-height: 1.8; color: var(--text); }
 
+.fishing-index-widget { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px 20px; }
+.fishing-index-widget h2 { border-bottom: none; margin-bottom: 8px; }
+.fishing-index-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 14px; }
+@media (max-width: 640px) { .fishing-index-grid { grid-template-columns: 1fr; } }
+.fishing-index-col h3 { font-size: .92rem; font-weight: 700; color: var(--text); margin-bottom: 8px; }
+.fishing-index-row {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 7px 10px; border-radius: 8px; margin-bottom: 6px; background: var(--white);
+  border: 1px solid var(--border);
+}
+.idx-species { font-size: .88rem; color: var(--text); font-weight: 600; }
+.idx-badge { font-size: .78rem; font-weight: 700; padding: 2px 10px; border-radius: 50px; }
+.idx-매우좋음 .idx-badge { background: #ECFDF5; color: #047857; }
+.idx-좋음 .idx-badge { background: #F0FDF4; color: #2E8B57; }
+.idx-보통 .idx-badge { background: #FFFBEB; color: #B45309; }
+.idx-나쁨 .idx-badge { background: #FEF2F2; color: #B91C1C; }
+.idx-매우나쁨 .idx-badge { background: #FEE2E2; color: #991B1B; }
+
 .tide-crosslink-banner {
   margin: 16px 0; padding: 14px 18px; background: linear-gradient(135deg, var(--primary-light), #ECFEFF);
   border: 1px solid #BAE6FD; border-radius: var(--radius);

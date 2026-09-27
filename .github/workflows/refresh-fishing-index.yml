@@ -1,0 +1,69 @@
+name: Daily Fishing Index Refresh & Deploy
+
+on:
+  schedule:
+    - cron: '20 15 * * *'  # 매일 00:20 KST (전날 15:20 UTC)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  refresh-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Python deps
+        run: pip install requests
+
+      - name: Refresh fishing index data
+        run: python scripts/fetch_fishing_index.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add _data/fishing_index_lookup.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Daily fishing index refresh $(date -u +%Y-%m-%d)"
+            git push
+          else
+            echo "No data changes"
+          fi
+
+      # 데이터 갱신 커밋이 GITHUB_TOKEN으로 이뤄져 다른 on:push 워크플로(deploy.yml)를
+      # 못 깨우므로(무한루프 방지 정책), 배포까지 이 잡 안에서 바로 이어서 처리함.
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Build with Jekyll
+        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+        env:
+          JEKYLL_ENV: production
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

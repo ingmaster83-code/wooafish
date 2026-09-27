@@ -76,6 +76,44 @@ layout: default
   <!-- 광고 -->
   <div class="ad-slot">{% include ad.html %}</div>
 
+  <!-- 오늘의 바다낚시지수 -->
+  {% if page.nearestFishingIndex %}
+  {% assign fi = page.nearestFishingIndex %}
+  <div class="market-section fishing-index-widget">
+    <h2>🎣 오늘의 바다낚시지수 - {{ page.spotName }} 인근 {{ fi.name }} 해역</h2>
+    <p class="market-description">
+      국립해양조사원이 제공하는 물때·파고·수온 기반 어종별 낚시지수입니다. {{ page.spotName }}과(와) 가장 가까운 관측 해역인 <strong>{{ fi.name }}</strong> 기준이며, 실제 {{ page.spotName }} 현장 여건과는 차이가 있을 수 있습니다.
+    </p>
+    <div class="fishing-index-grid">
+      {% assign gubun_list = "rock,boat" | split: "," %}
+      {% for gubun in gubun_list %}
+        {% assign items = fi[gubun] %}
+        {% if items and items.size > 0 %}
+        <div class="fishing-index-col">
+          <h3>{% if gubun == "rock" %}🪨 갯바위 낚시{% else %}🚤 선상 낚시{% endif %}</h3>
+          {% for it in items limit: 6 %}
+          <div class="fishing-index-row idx-{{ it.index }}">
+            <span class="idx-species">{{ it.species }}</span>
+            <span class="idx-badge">{{ it.index }}</span>
+          </div>
+          {% endfor %}
+        </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+    {% assign rep = fi.rock.first | default: fi.boat.first %}
+    {% if rep %}
+    <div class="market-facilities" style="margin-top:10px;">
+      <span class="facility-badge">🌊 파고 {{ rep.waveMin }}~{{ rep.waveMax }}m</span>
+      <span class="facility-badge">🌡️ 수온 {{ rep.waterTempMin }}~{{ rep.waterTempMax }}℃</span>
+      {% if rep.airTempMin %}<span class="facility-badge">🌤️ 기온 {{ rep.airTempMin }}~{{ rep.airTempMax }}℃</span>{% endif %}
+      <span class="facility-badge">🌙 물때 {{ rep.tide }}</span>
+    </div>
+    <p style="font-size:.78rem;color:var(--text-muted);margin-top:8px;">기준일 {{ rep.date }} · 매일 자동 갱신 (자료: 국립해양조사원 바다낚시지수)</p>
+    {% endif %}
+  </div>
+  {% endif %}
+
   <!-- 우아물때 교차링크 -->
   {% if page.nearestTide %}
   <div class="tide-crosslink-banner">

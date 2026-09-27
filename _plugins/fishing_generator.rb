@@ -20,16 +20,23 @@ module Jekyll
     TIDE_RELEVANT_TYPES = %w[sea port island lighthouse coast].freeze
     TIDE_MAX_DIST_DEG = 0.5 # 대략 50km 이내일 때만 연결
 
+    # 바다낚시지수는 국립해양조사원이 해역 대표 지점(전국 34곳) 단위로만 제공하므로,
+    # 물때 크로스링크보다 넓게(약 80km) 잡아야 연안 낚시터 상당수가 커버됨
+    INDEX_RELEVANT_TYPES = %w[sea port island lighthouse coast].freeze
+    INDEX_MAX_DIST_DEG = 0.8
+
     def generate(site)
       spots = site.data['fishing_spots']
       return unless spots&.any?
 
       tide_spots = site.data['tide_lookup'] || []
+      index_points = site.data['fishing_index_lookup'] || []
 
       Jekyll.logger.info "FishingGenerator:", "#{spots.size}개 낚시터 페이지 생성 중..."
 
       spots.each do |spot|
         nearest_tide = nearest_tide_spot(spot, tide_spots)
+        nearest_index = nearest_fishing_index(spot, index_points)
         same_region = spots
           .select { |s| s['region'] == spot['region'] && s['slug'] != spot['slug'] }
           .first(8)
@@ -60,7 +67,7 @@ module Jekyll
           next_spot = { 'slug' => n['slug'], 'name' => n['spotName'] }
         end
 
-        site.pages << SpotPage.new(site, spot, same_region, same_type, same_species, prev_spot, next_spot, nearest_tide)
+        site.pages << SpotPage.new(site, spot, same_region, same_type, same_species, prev_spot, next_spot, nearest_tide, nearest_index)
       end
 
       by_region = spots.group_by { |s| s['region'] }
@@ -96,10 +103,28 @@ module Jekyll
       return nil if best.nil? || Math.sqrt(best_d) > TIDE_MAX_DIST_DEG
       best
     end
+
+    def nearest_fishing_index(spot, index_points)
+      return nil unless INDEX_RELEVANT_TYPES.include?(spot['typeSlug'])
+      return nil if spot['lat'].to_s.empty? || spot['lng'].to_s.empty?
+      return nil if index_points.empty?
+
+      s_lat = spot['lat'].to_f
+      s_lng = spot['lng'].to_f
+      best, best_d = nil, nil
+      index_points.each do |t|
+        d = (t['lat'].to_f - s_lat)**2 + (t['lot'].to_f - s_lng)**2
+        if best_d.nil? || d < best_d
+          best, best_d = t, d
+        end
+      end
+      return nil if best.nil? || Math.sqrt(best_d) > INDEX_MAX_DIST_DEG
+      best
+    end
   end
 
   class SpotPage < Page
-    def initialize(site, spot, same_region, same_type, same_species, prev_spot, next_spot, nearest_tide = nil)
+    def initialize(site, spot, same_region, same_type, same_species, prev_spot, next_spot, nearest_tide = nil, nearest_index = nil)
       @site = site
       @base = site.source
       @dir  = "spot/#{spot['slug']}"
@@ -115,6 +140,7 @@ module Jekyll
       self.data['prev_spot']    = prev_spot
       self.data['next_spot']    = next_spot
       self.data['nearestTide']  = nearest_tide
+      self.data['nearestFishingIndex'] = nearest_index
 
       species_str = (spot['species'] || []).join(', ')
       fee_str = spot['fee'].to_s.empty? ? '요금 정보 없음' : spot['fee']

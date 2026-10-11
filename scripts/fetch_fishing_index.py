@@ -18,12 +18,17 @@ from collections import defaultdict
 
 import requests
 
+def _need_key():
+    import os, sys
+    return os.environ.get("DATA_GO_KR_API_KEY") or sys.exit("환경변수 DATA_GO_KR_API_KEY 가 필요합니다(키를 코드에 넣지 마세요).")
+
+
 sys.stdout.reconfigure(encoding="utf-8")
 
 ROOT = Path(__file__).parent.parent
 OUT_FILE = ROOT / "_data" / "fishing_index_lookup.json"
 BASE = "https://apis.data.go.kr/1192136/fcstFishingv2/GetFcstFishingApiServicev2"
-SERVICE_KEY = os.environ.get("DATA_GO_KR_API_KEY") or "9490b1d34e92aa9e25b32a4cff1438fc7b9c71e5d332413916a391e867f61e86"
+SERVICE_KEY = os.environ.get("DATA_GO_KR_API_KEY") or _need_key()
 
 GUBUN_LIST = ["갯바위", "선상"]
 

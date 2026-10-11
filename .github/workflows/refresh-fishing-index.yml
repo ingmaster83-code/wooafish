@@ -31,6 +31,8 @@ jobs:
 
       - name: Refresh fishing index data
         run: python scripts/fetch_fishing_index.py
+        env:
+          DATA_GO_KR_API_KEY: ${{ secrets.DATA_GO_KR_API_KEY }}
 
       - name: Commit and push if changed
         run: |

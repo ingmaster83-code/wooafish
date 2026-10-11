@@ -37,13 +37,21 @@ def fetch_all(gubun):
     items = []
     page = 1
     while True:
-        r = requests.get(
-            BASE,
-            params={"serviceKey": SERVICE_KEY, "type": "json", "gubun": gubun, "numOfRows": 300, "pageNo": page},
-            timeout=30,
-        )
-        r.raise_for_status()
-        d = r.json()
+        for attempt in range(4):   # data.go.kr 간헐 타임아웃 대비 재시도(일시 오류로 매일 cron 이 실패하지 않도록)
+            try:
+                r = requests.get(
+                    BASE,
+                    params={"serviceKey": SERVICE_KEY, "type": "json", "gubun": gubun, "numOfRows": 300, "pageNo": page},
+                    timeout=30,
+                )
+                r.raise_for_status()
+                d = r.json()
+                break
+            except (requests.exceptions.RequestException, ValueError) as e:
+                if attempt == 3:
+                    raise
+                print(f"  [재시도 {attempt + 1}] {gubun} page={page}: {e}")
+                time.sleep(5 * (2 ** attempt))
         if d.get("header", {}).get("resultCode") not in ("00", "0"):
             raise SystemExit(f"API 오류({gubun}): {d.get('header')}")
         batch = d.get("body", {}).get("items", {}).get("item") or []
